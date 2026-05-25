@@ -323,7 +323,9 @@ ref_self %>%
 
 
 ```{r}
+unique((new_baseline %>% subset(!indiv %in% mistakes$indiv))$repunit)
 
-saveRDS(new_baseline %>% subset(!indiv %in% mistakes$indiv), "new_baseline_data/processed/sebastes_spp_id_baseline_haplotypes_04_17.rds")
+
+#saveRDS(new_baseline %>% subset(!indiv %in% mistakes$indiv), #"new_baseline_data/processed/sebastes_spp_id_baseline_haplotypes_04_17.rds")
 
 ```
